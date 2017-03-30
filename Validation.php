@@ -71,7 +71,7 @@ class Validation {
                 break;
                 
             case COLUMN_COUNT:
-                if ((($sheetNumber == 0)&&($value == self::VALID_COLUMN_NUMBER_1)) | (($sheetNumber == 1)&&($value == self::VALID_COLUMN_NUMBER_2))){
+                if ((($sheetNumber == 0)&&($value == self::VALID_COLUMN_NUMBER_1)) || (($sheetNumber == 1)&&($value == self::VALID_COLUMN_NUMBER_2))){
                     return true;;
                 } else {
                     $this->error(COLUMN_COUNT);
